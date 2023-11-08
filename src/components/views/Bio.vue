@@ -1,72 +1,26 @@
 <template>
   <div>
     <img class="self" src="@/assets/Biography/self.jpg" />
-    <h2 class="header">Don Chia (谢祺恩)</h2>
+    <h2 class="header">Tyler Pimental</h2>
     <h4 class="subtitle" style="padding-bottom: 10px">
-      Web Developer | iOS Developer | UI/UX Designer | Apple WWDC Scholar 2021 &
-      2022
+        Systems Administration | Cyber Security | Cloud Technologies
     </h4>
     <h4 class="subtitle">Singapore 📍</h4>
     <div class="badge-grid">
       <img
         class="badge"
         alt="Swift"
-        src="https://img.shields.io/badge/-Swift-orange"
+        src="https://img.shields.io/badge/-Windows-Green"
       />
       <img
         class="badge"
         alt="Python"
-        src="https://img.shields.io/badge/-Python-blue"
+        src="https://img.shields.io/badge/-Azure-blue"
       />
       <img
         class="badge"
         alt="JavaScript"
-        src="https://img.shields.io/badge/-Javascript-yellow"
-      />
-      <img
-        class="badge"
-        alt="SQL"
-        src="https://img.shields.io/badge/-SQL-lightgrey"
-      />
-      <img
-        class="badge"
-        alt="Git"
-        src="https://img.shields.io/badge/-Git-critical"
-      />
-      <img
-        class="badge"
-        alt="HTML/CSS"
-        src="https://img.shields.io/badge/-HTML%2FCSS-yellowgreen"
-      />
-      <img
-        class="badge"
-        alt="SwiftUI"
-        src="https://img.shields.io/badge/-SwiftUI-3e8bc3"
-      />
-      <img
-        class="badge"
-        alt="Vue"
-        src="https://img.shields.io/badge/-VueJS-61b083"
-      />
-      <img
-        class="badge"
-        alt="Flask"
-        src="https://img.shields.io/badge/-Flask-406893"
-      />
-      <img
-        class="badge"
-        alt="MongoDB"
-        src="https://img.shields.io/badge/-MongoDB-4ca158"
-      />
-      <img
-        class="badge"
-        alt="SQLite"
-        src="https://img.shields.io/badge/-SQLite-64a2c9"
-      />
-      <img
-        class="badge"
-        alt="Figma"
-        src="https://img.shields.io/badge/-Figma-8c5aee"
+        src="https://img.shields.io/badge/-Scripting-yellow"
       />
     </div>
     <div class="inner-content">
