@@ -121,6 +121,8 @@ import FilesWindow from "./components/template/FilesWindow.vue";
 import ImagePreviewWindow from "./components/template/ImagePreviewWindow.vue";
 import Placeholder from "./components/views/Placeholder";
 import Photos from "./components/views/Photos";
+import Certs from "./components/views/Certs";
+import Counter from "./components/views/Counter";
 import Bio from "./components/views/Bio";
 import Projects from "./components/views/Projects";
 import Resume from "./components/views/Resume";
@@ -147,6 +149,8 @@ export default {
     ImagePreviewWindow,
     Photos,
     Bio,
+    Certs,
+    Counter,
     Projects,
     Resume,
     Mail,

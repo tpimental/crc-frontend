@@ -1148,7 +1148,7 @@ export default new Vuex.Store({
         position: "absolute", // Window Position
         positionX: "5vw", // Window Position X (when first opened)
         positionY: "5%", // Window Position Y (when first opened)
-        iconImage: "bio.png", // Window Icon Image
+        iconImage: "projects.png", // Window Icon Image
         altText: "Projects", // Window Icon Alt Text
         fullscreen: false, // Window Fullscreen State [true, false]
         showInAppGrid: true,
@@ -1171,6 +1171,48 @@ export default new Vuex.Store({
         positionY: "15vh", // Window Position Y (when first opened)
         iconImage: "resume.png", // Window Icon Image
         altText: "Résumé", // Window Icon Alt Text
+        fullscreen: false, // Window Fullscreen State [true, false]
+        showInAppGrid: true,
+        showInNavbar: true,
+      },
+      {
+        windowId: "CertsWindow", // Unique ID
+        windowState: "close", // Window State [open, close, minimize]
+        displayName: "Certs", // Display Name (title under icon)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowContent: "Certs", // Window Content (used under slots)
+        windowContentPadding: {
+          top: null,
+          right: null,
+          bottom: null,
+          left: null,
+        }, // Window Content Padding
+        position: "absolute", // Window Position
+        positionX: "5vw", // Window Position X (when first opened)
+        positionY: "5%", // Window Position Y (when first opened)
+        iconImage: "cert.png", // Window Icon Image
+        altText: "Certs", // Window Icon Alt Text
+        fullscreen: false, // Window Fullscreen State [true, false]
+        showInAppGrid: true,
+        showInNavbar: true,
+      },
+      {
+        windowId: "CounterWindow", // Unique ID
+        windowState: "close", // Window State [open, close, minimize]
+        displayName: "Counter", // Display Name (title under icon)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowContent: "Counter", // Window Content (used under slots)
+        windowContentPadding: {
+          top: null,
+          right: null,
+          bottom: null,
+          left: null,
+        }, // Window Content Padding
+        position: "absolute", // Window Position
+        positionX: "5vw", // Window Position X (when first opened)
+        positionY: "5%", // Window Position Y (when first opened)
+        iconImage: "counter.png", // Window Icon Image
+        altText: "Counter", // Window Icon Alt Text
         fullscreen: false, // Window Fullscreen State [true, false]
         showInAppGrid: true,
         showInNavbar: true,
