@@ -80,82 +80,39 @@
           :class="{ expandedScrollContainer: $store.getters.isFullscreenBio }"
         >
           <img class="self" src="../assets/Biography/self.webp" />
-          <div class="header">Don Chia (谢祺恩)</div>
+          <div class="header">Tyler Pimental</div>
           <div class="subtitle">
-            Web Developer | iOS Developer | UI/UX Designer | Apple WWDC Scholar
-            2021
+            Systems Administration | Cyber Security | Cloud Technologies
           </div>
-          <div class="subtitle">Singapore 📍</div>
           <div class="badge-grid">
             <img
               class="badge"
               alt="Swift"
-              src="https://img.shields.io/badge/-Swift-orange"
+              src="https://img.shields.io/badge/-Windows-Green"
             />
             <img
               class="badge"
               alt="Python"
-              src="https://img.shields.io/badge/-Python-blue"
+              src="https://img.shields.io/badge/-Azure-blue"
             />
             <img
               class="badge"
               alt="JavaScript"
-              src="https://img.shields.io/badge/-Javascript-yellow"
-            />
-            <img
-              class="badge"
-              alt="SQL"
-              src="https://img.shields.io/badge/-SQL-lightgrey"
-            />
-            <img
-              class="badge"
-              alt="Git"
-              src="https://img.shields.io/badge/-Git-critical"
-            />
-            <img
-              class="badge"
-              alt="HTML/CSS"
-              src="https://img.shields.io/badge/-HTML%2FCSS-yellowgreen"
-            />
-            <img
-              class="badge"
-              alt="SwiftUI"
-              src="https://img.shields.io/badge/-SwiftUI-3e8bc3"
-            />
-            <img
-              class="badge"
-              alt="Vue"
-              src="https://img.shields.io/badge/-VueJS-61b083"
-            />
-            <img
-              class="badge"
-              alt="Flask"
-              src="https://img.shields.io/badge/-Flask-406893"
-            />
-            <img
-              class="badge"
-              alt="MongoDB"
-              src="https://img.shields.io/badge/-MongoDB-4ca158"
-            />
-            <img
-              class="badge"
-              alt="SQLite"
-              src="https://img.shields.io/badge/-SQLite-64a2c9"
-            />
-            <img
-              class="badge"
-              alt="Figma"
-              src="https://img.shields.io/badge/-Figma-8c5aee"
+              src="https://img.shields.io/badge/-Scripting-yellow"
             />
           </div>
           <div class="inner-content">
             <div class="heading"><b>About Me</b></div>
             <div class="paragraph">
-              Hello there! I am Don from Singapore and I am an 18 year old
-              student who's extremely passionate in both programming and design
-              for both the web and iOS platform. I am currently still a student
-              in high school but let not my age be the key defining factor as I
-              often aim to punch above my weight.
+              I am currently a Cloud Specialist dedicated to optimizing 
+              system performance and driving innovation. Passionate about 
+              leveraging cloud technologies to enhance efficiency and scalability. 
+              Skilled in troubleshooting complex issues and providing expert solutions. 
+              Constantly seeking opportunities to expand knowledge and stay at the forefront 
+              of emerging trends. Adept at collaborating with cross-functional teams, 
+              utilizing effective communication to foster seamless integration and achieve
+              organizational goals. Former United States Marine Corps service has instilled 
+              discipline, adaptability, and a relentless drive for excellence.
             </div>
             <div class="paragraph">
               I have worked with a mixture of design and frontend/backend
