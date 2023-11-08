@@ -99,9 +99,10 @@ h3 {
 </style>
 
 <script>
-const outputElement = document.getElementById("visitor-count");
 
 window.onload = () => {
+  const outputElement = document.getElementById("visitor-count");
+
     //webpage is loaded
     //increment the counter
     fetch("https://tpimental-apimgmt.azure-api.net/backend-functionapp-current/increment-count")
