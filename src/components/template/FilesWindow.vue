@@ -116,12 +116,7 @@
           </li>
         </nav>
       </div>
-      <div class="bottom-bar">
-        <div class="left-bar bar">{{ files.length }} object(s)</div>
-        <div class="right-bar bar">
-          {{ convertBytestoMegabytes(size) }}
-        </div>
-      </div>
+
     </div>
   </interact>
 </template>
@@ -199,8 +194,8 @@
   flex-flow: column;
   display: flex;
   min-height: 350px;
-  min-width: 400px;
-  max-width: 100vw !important;
+  min-width: 900px;
+  max-width: 900vw !important;
   max-height: 100vh !important;
   flex-direction: column;
 }
@@ -229,7 +224,7 @@
 }
 
 .file-explorer {
-  background: white;
+  background: rgb(195, 195, 195);
   box-shadow: none;
   border-top: solid rgb(0, 0, 0) 1.5px;
   border-left: solid rgb(0, 0, 0) 1.5px;

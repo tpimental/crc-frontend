@@ -20,12 +20,6 @@
         <div class="icon-text">Photos</div>
       </div>
     </button>
-    <button class="app" v-touch:tap="openNoss" v-on:dblclick="openNoss">
-      <img class="icon app-noss" src="../assets/win95Icons/noss.webp" />
-      <div class="border">
-        <div class="icon-text">NOSSAFLEX</div>
-      </div>
-    </button>
     <button class="app" v-touch:tap="openMail" v-on:dblclick="openMail">
       <img class="icon app-mail" src="../assets/win95Icons/mail.png" />
       <div class="border">
@@ -122,15 +116,6 @@ export default {
       this.$store.commit("changeActiveWindow", "Photos");
       setTimeout(() => {
         this.$store.commit("zIndexIncrement", "photos");
-      }, 1);
-    },
-    openNoss(e) {
-      e.stopPropagation();
-      this.$store.commit("toggleCloseNossaflex", true);
-      this.$store.commit("toggleShownNossaflex", true);
-      this.$store.commit("changeActiveWindow", "NOSSAFLEX");
-      setTimeout(() => {
-        this.$store.commit("zIndexIncrement", "noss");
       }, 1);
     },
     openResume(e) {

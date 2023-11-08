@@ -1134,6 +1134,27 @@ export default new Vuex.Store({
         showInNavbar: true,
       },
       {
+        windowId: "ProjectsWindow", // Unique ID
+        windowState: "close", // Window State [open, close, minimize]
+        displayName: "Projects", // Display Name (title under icon)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowContent: "projects", // Window Content (used under slots)
+        windowContentPadding: {
+          top: null,
+          right: null,
+          bottom: null,
+          left: null,
+        }, // Window Content Padding
+        position: "absolute", // Window Position
+        positionX: "5vw", // Window Position X (when first opened)
+        positionY: "5%", // Window Position Y (when first opened)
+        iconImage: "bio.png", // Window Icon Image
+        altText: "Projects", // Window Icon Alt Text
+        fullscreen: false, // Window Fullscreen State [true, false]
+        showInAppGrid: true,
+        showInNavbar: true,
+      },
+      {
         windowId: "ResumeWindow", // Unique ID
         windowState: "close", // Window State [open, close, minimize]
         displayName: "Résumé", // Display Name (title under icon)
@@ -1163,145 +1184,19 @@ export default new Vuex.Store({
         windowContentPadding: {
           top: "1px",
           right: "10px",
-          bottom: "10px",
+          bottom: "100px",
           left: "10px",
         },
         position: "absolute",
         positionX: "6vw",
         positionY: "12vh",
         iconImage: "image.png",
-        altText: "Photos",
+        altText: "Site Diagram",
         fullscreen: false,
         showInAppGrid: false,
         showInNavbar: false,
         // imagePreview: file.src
-      },
-      {
-        windowId: "NOSSAFLEXWindow",
-        windowState: "close",
-        displayName: "NOSSAFLEX",
-        windowComponent: "window",
-        windowContent: "nossaflex",
-        windowContentPadding: {
-          top: null,
-          right: null,
-          bottom: null,
-          left: null,
-        },
-        position: "absolute",
-        positionX: "6vw",
-        positionY: "12vh",
-        iconImage: "noss.webp",
-        altText: "NOSSAFLEX App",
-        fullscreen: false,
-        showInAppGrid: true,
-        showInNavbar: true,
-      },
-      {
-        windowId: "AppleWWDC2021",
-        windowState: "close",
-        displayName: "WWDC 2021",
-        windowComponent: "window",
-        windowContent: "wwdc2021",
-        windowContentPadding: {
-          top: null,
-          right: null,
-          bottom: null,
-          left: null,
-        },
-        position: "absolute",
-        positionX: "4vw",
-        positionY: "12vh",
-        iconImage: "apple.png",
-        altText: "Apple WWDC 2021",
-        fullscreen: false,
-        showInAppGrid: true,
-        showInNavbar: true,
-      },
-      {
-        windowId: "AppleWWDC2022",
-        windowState: "close",
-        displayName: "WWDC 2022",
-        windowComponent: "window",
-        windowContent: "wwdc2022",
-        windowContentPadding: {
-          top: null,
-          right: null,
-          bottom: null,
-          left: null,
-        },
-        position: "absolute",
-        positionX: "4vw",
-        positionY: "12vh",
-        iconImage: "apple2.png",
-        altText: "Apple WWDC 2022",
-        fullscreen: false,
-        showInAppGrid: true,
-        showInNavbar: true,
-      },
-      {
-        windowId: "OpenSourceWindow",
-        windowState: "close",
-        displayName: "Open Source",
-        windowComponent: "window",
-        windowContent: "opensource",
-        windowContentPadding: {
-          top: null,
-          right: "15px",
-          bottom: null,
-          left: "15px",
-        },
-        position: "absolute",
-        positionX: "6vw",
-        positionY: "12vh",
-        iconImage: "opensource.png",
-        altText: "Open Source Projects",
-        fullscreen: false,
-        showInAppGrid: true,
-        showInNavbar: true,
-      },
-      {
-        windowId: "MailWindow",
-        windowState: "close",
-        displayName: "Mail",
-        windowComponent: "mail",
-        windowContent: "",
-        windowContentPadding: {
-          top: "0",
-          right: "0",
-          bottom: "0",
-          left: "0",
-        },
-        position: "absolute",
-        positionX: "6vw",
-        positionY: "12vh",
-        iconImage: "mail.png",
-        altText: "Mail",
-        fullscreen: false,
-        showInAppGrid: true,
-        showInNavbar: true,
-      },
-      {
-        windowId: "WebOSWindow",
-        windowState: "close",
-        displayName: "OS",
-        windowComponent: "webos",
-        windowContent: "",
-        windowContentPadding: {
-          top: "0",
-          right: "0",
-          bottom: "0",
-          left: "0",
-        },
-        position: "absolute",
-        positionX: "6vw",
-        positionY: "12vh",
-        iconImage: "webos.png",
-        altText: "Web OS",
-        fullscreen: true,
-        showInAppGrid: true,
-        showInNavbar: true,
-      },
+      }
       // register your new windows here
     ],
     mailContent: "",

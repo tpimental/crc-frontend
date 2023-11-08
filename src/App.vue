@@ -122,8 +122,8 @@ import ImagePreviewWindow from "./components/template/ImagePreviewWindow.vue";
 import Placeholder from "./components/views/Placeholder";
 import Photos from "./components/views/Photos";
 import Bio from "./components/views/Bio";
+import Projects from "./components/views/Projects";
 import Resume from "./components/views/Resume";
-import Nossaflex from "./components/views/Nossaflex";
 import Mail from "./components/template/Mail";
 import StartMenu from "./components/StartMenu.vue";
 import Webos from "./components/template/WebOS";
@@ -147,8 +147,8 @@ export default {
     ImagePreviewWindow,
     Photos,
     Bio,
+    Projects,
     Resume,
-    Nossaflex,
     Mail,
     StartMenu,
     Webos,

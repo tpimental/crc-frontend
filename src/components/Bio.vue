@@ -309,7 +309,7 @@
   min-height: 500px;
   min-width: 350px;
   height: 500px;
-  width: 600px;
+  width: 900px;
   background: rgb(195, 195, 195);
   overflow: hidden;
   border-top: solid rgb(250, 250, 250) 2px;
@@ -324,7 +324,7 @@
 }
 
 .self {
-  width: 100%;
+  width: 200%;
   height: auto;
   /* border-radius: 5px; */
 }

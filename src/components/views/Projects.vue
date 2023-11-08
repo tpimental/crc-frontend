@@ -27,8 +27,7 @@
     <div class="inner-content">
       <h3 class="heading"><b>About Me</b></h3>
       <p class="paragraph">
-        I am currently a Cloud Specialist dedicated to optimizing 
-        system performance and driving innovation. Passionate about 
+        I am currently a Cloud Specialist dedicated to optimizing system performance and driving innovation. Passionate about 
         leveraging cloud technologies to enhance efficiency and scalability. 
         Skilled in troubleshooting complex issues and providing expert solutions. 
         Constantly seeking opportunities to expand knowledge and stay at the forefront 
@@ -74,7 +73,7 @@
 
 .subtitle {
   font-size: 12px;
-  color: blue;
+  color: gray;
 }
 
 .heading {

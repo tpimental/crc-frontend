@@ -4,23 +4,8 @@
       <img class="sidebar-image" src="@/assets/sidebar-image.png" />
     </div>
     <div class="socials">
-      <a href="https://www.instagram.com/_dontax_/" target="_blank">
-        <div class="bar">
-          <img
-            class="social-image"
-            src="@/assets/iPhone-Icons/Instagram.webp"
-          />
-          <div class="social-text"><u>I</u>nstagram</div>
-        </div>
-      </a>
-      <a href="https://www.reddit.com/user/satoshigekkouga2303" target="_blank">
-        <div class="bar">
-          <img class="social-image" src="@/assets/iPhone-Icons/Reddit.webp" />
-          <u>R</u>eddit
-        </div>
-      </a>
       <a
-        href="https://www.linkedin.com/in/don-chia"
+        href="https://www.linkedin.com/in/tyler-pimental-0812aa170/"
         target="_blank"
       >
         <div class="bar">
@@ -28,35 +13,17 @@
           <u>L</u>inkedIn
         </div>
       </a>
-      <a href="https://twitter.com/lizarDON2303" target="_blank">
-        <div class="bar">
-          <img class="social-image" src="@/assets/iPhone-Icons/Twitter.webp" />
-          <u>T</u>witter
-        </div>
-      </a>
-      <a href="https://github.com/DonChiaQE" target="_blank">
+      <a href="https://github.com/tpimental" target="_blank">
         <div class="bar">
           <img class="social-image" src="@/assets/iPhone-Icons/Github.webp" />
           <u>G</u>itHub
         </div>
       </a>
       <div class="divider"></div>
-      <a href="/files/don_chia_resume.pdf" target="_blank">
+      <a href="/files/tyler_pimental_resume.pdf" target="_blank">
         <div class="bar">
           <img class="social-image" src="@/assets/win95Icons/resume.png" />
-          <u>R</u>ésumé
-        </div>
-      </a>
-      <a
-        href="https://apps.apple.com/app/nossaflex/id1523558285"
-        target="_blank"
-      >
-        <div class="bar">
-          <img
-            class="social-image"
-            src="@/assets/iPhone-Icons/Nossaflex.webp"
-          />
-          <u>N</u>OSSAFLEX
+          <u>R</u>esume
         </div>
       </a>
     </div>
@@ -65,7 +32,7 @@
 <style scoped>
 .menu {
   width: 165px;
-  height: 282px;
+  height: 200px;
   background: black;
   background: rgb(195, 195, 195);
   overflow: hidden;
