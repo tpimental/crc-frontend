@@ -62,43 +62,41 @@ h3 {
 </style>
 
 <script>
+const outputElement = document.getElementById("visitor-count");
 
-window.onload = () => {
-  const outputElement = document.getElementById("visitor-count");
+//webpage is loaded
+//increment the counter
+fetch("https://tpimental-apimgmt.azure-api.net/backend-functionapp-current/increment-count")
+    .then(response => {
 
-    //webpage is loaded
-    //increment the counter
-    fetch("https://tpimental-apimgmt.azure-api.net/backend-functionapp-current/increment-count")
-        .then(response => {
+    })
+    .catch(error => {
+        console.log("Increment count error:", error);
 
-        })
-        .catch(error => {
-            console.log("Increment count error:", error);
+    })
+//get the new count
+fetch("https://tpimental-apimgmt.azure-api.net/backend-functionapp-current/get-count")
+    .then(response => {
+        if(response.ok){
+            return response.json();
+        }else {
+            return response.json().then(data => {
+                throw new Error(data.message); // If not successful, throw an error with the message
+            });
+        }
+    })
+    .then(data => {
+        //Process the data from the API response
+        const responseData = data;
 
-        })
-    //get the new count
-    fetch("https://tpimental-apimgmt.azure-api.net/backend-functionapp-current/get-count")
-        .then(response => {
-            if(response.ok){
-                return response.json();
-            }else {
-                return response.json().then(data => {
-                    throw new Error(data.message); // If not successful, throw an error with the message
-                });
-            }
-        })
-        .then(data => {
-            //Process the data from the API response
-            const responseData = data;
+        outputElement.innerHTML = addNumberSuffix(data);
+        console.log(responseData);
+    })
+    .catch(error => {
+        // Error handling
+        console.error("Get Count Error: ", error);
+    });
 
-            outputElement.innerHTML = addNumberSuffix(data);
-            console.log(responseData);
-        })
-        .catch(error => {
-            // Error handling
-            console.error("Get Count Error: ", error);
-        });
-}
 
 function addNumberSuffix(number) {
     if (typeof number !== 'number' || isNaN(number)) {
@@ -123,8 +121,5 @@ function addNumberSuffix(number) {
         }
     }
 }
-
-
-
 
 </script>
