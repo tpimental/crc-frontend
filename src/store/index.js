@@ -1200,7 +1200,7 @@ export default new Vuex.Store({
         windowId: "CounterWindow", // Unique ID
         windowState: "close", // Window State [open, close, minimize]
         displayName: "Counter", // Display Name (title under icon)
-        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowComponent: "AlertWindow", // Window Component (can be changed to use modified windows)
         windowContent: "Counter", // Window Content (used under slots)
         windowContentPadding: {
           top: null,
@@ -1216,28 +1216,6 @@ export default new Vuex.Store({
         fullscreen: false, // Window Fullscreen State [true, false]
         showInAppGrid: true,
         showInNavbar: true,
-      },
-      {
-        windowId: "ImagePreviewWindow",
-        windowState: "close",
-        displayName: "Media Viewer",
-        windowComponent: "ImagePreviewWindow",
-        windowContent: "",
-        windowContentPadding: {
-          top: "1px",
-          right: "10px",
-          bottom: "100px",
-          left: "10px",
-        },
-        position: "absolute",
-        positionX: "6vw",
-        positionY: "12vh",
-        iconImage: "image.png",
-        altText: "Site Diagram",
-        fullscreen: false,
-        showInAppGrid: false,
-        showInNavbar: false,
-        // imagePreview: file.src
       }
       // register your new windows here
     ],

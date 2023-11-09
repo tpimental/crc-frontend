@@ -2,13 +2,7 @@
   <div>
     <h2 class="header">Congratulations!</h2>
     <div class="inner-content">
-      <p class="paragraph">
-        You are the 
-      </p>
-      <span class="subtitle" id="visitor-count"></span>
-      <p class="paragraph">
-        visitor to this site!
-      </p>
+      <p class="paragraph">You are the</p><span class="subtitle" id="visitor-count"></span><p class="paragraph">visitor to this site!</p>
     </div>
   </div>
 </template>

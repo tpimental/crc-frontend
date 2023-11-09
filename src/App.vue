@@ -117,6 +117,7 @@ import Navbar from "./components/windows/Navbar";
 // import TopNavbar from './components/macos/TopNavbar.vue'
 import Window from "./components/template/Window";
 import CertsWindow from "./components/template/CertsWindow.vue";
+import AlertWindow from "./components/template/AlertWindow.vue"
 import AppGrid from "./components/AppGrid";
 import FilesWindow from "./components/template/FilesWindow.vue";
 import ImagePreviewWindow from "./components/template/ImagePreviewWindow.vue";
@@ -144,11 +145,11 @@ export default {
   components: {
     Window,
     CertsWindow,
+    AlertWindow,
     Navbar,
     AppGrid,
     Placeholder,
     FilesWindow,
-    ImagePreviewWindow,
     Photos,
     Bio,
     Certs,
@@ -227,7 +228,7 @@ export default {
     };
     this.$store.commit("pushNewWindow", newPhotoWindowPayload);
 
-    this.openWindow("BiographyWindow");
+    this.openWindow("CounterWindow");
   },
   methods: {
     openWindow(windowId) {

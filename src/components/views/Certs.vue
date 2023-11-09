@@ -18,6 +18,7 @@
   margin-top: 20px;
 }
 
+
 .badge {
   width: auto;
   height: 20px;
