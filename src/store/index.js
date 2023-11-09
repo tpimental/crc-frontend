@@ -1150,7 +1150,7 @@ export default new Vuex.Store({
         positionY: "5%", // Window Position Y (when first opened)
         iconImage: "projects.png", // Window Icon Image
         altText: "Projects", // Window Icon Alt Text
-        fullscreen: false, // Window Fullscreen State [true, false]
+        fullscreen: true, // Window Fullscreen State [true, false]
         showInAppGrid: true,
         showInNavbar: true,
       },
@@ -1179,7 +1179,7 @@ export default new Vuex.Store({
         windowId: "CertsWindow", // Unique ID
         windowState: "close", // Window State [open, close, minimize]
         displayName: "Certs", // Display Name (title under icon)
-        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowComponent: "CertsWindow", // Window Component (can be changed to use modified windows)
         windowContent: "Certs", // Window Content (used under slots)
         windowContentPadding: {
           top: null,

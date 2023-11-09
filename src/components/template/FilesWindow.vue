@@ -116,7 +116,6 @@
           </li>
         </nav>
       </div>
-
     </div>
   </interact>
 </template>

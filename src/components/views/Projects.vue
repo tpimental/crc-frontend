@@ -1,51 +1,6 @@
 <template>
   <div>
-    <img class="self" src="@/assets/Biography/self.jpg" />
-    <h2 class="header">Tyler Pimental</h2>
-    <h4 class="subtitle" style="padding-bottom: 10px">
-        Systems Administration | Cyber Security | Cloud Technologies
-    </h4>
-    <h4 class="subtitle">Twentynine Palms, CA 📍</h4>
-    <span class="subtitle" id="visitor-count"></span>
-    <div class="badge-grid">
-      <img
-        class="badge"
-        alt="Swift"
-        src="https://img.shields.io/badge/-Windows-Green"
-      />
-      <img
-        class="badge"
-        alt="Python"
-        src="https://img.shields.io/badge/-Azure-blue"
-      />
-      <img
-        class="badge"
-        alt="JavaScript"
-        src="https://img.shields.io/badge/-Scripting-yellow"
-      />
-    </div>
-    <div class="inner-content">
-      <h3 class="heading"><b>About Me</b></h3>
-      <p class="paragraph">
-        I am currently a Cloud Specialist dedicated to optimizing system performance and driving innovation. Passionate about 
-        leveraging cloud technologies to enhance efficiency and scalability. 
-        Skilled in troubleshooting complex issues and providing expert solutions. 
-        Constantly seeking opportunities to expand knowledge and stay at the forefront 
-        of emerging trends. Adept at collaborating with cross-functional teams, 
-        utilizing effective communication to foster seamless integration and achieve
-        organizational goals. Former United States Marine Corps service has instilled 
-        discipline, adaptability, and a relentless drive for excellence.
-      </p>
-    </div>
-    <div class="inner-content">
-      <h3 class="heading"><b>Resume</b></h3>
-      <a
-        style="color: #ff5733"
-        href="/files/tyler_pimental_resume.pdf"
-        class="paragraph"
-        >Check out my resume here.</a
-      >
-    </div>
+    <img class="self" src="@/assets/crcdiagram.png" />
   </div>
 </template>
 
