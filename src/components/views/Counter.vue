@@ -1,8 +1,11 @@
 <template>
   <div>
-    <h2 class="header">Congratulations!</h2>
-    <div class="inner-content">
-      <p class="paragraph">You are the</p><span class="subtitle" id="visitor-count"></span><p class="paragraph">visitor to this site!</p>
+    <div class="header">
+      <h2>Congratulations!</h2>
+      <p class="paragraph">Congratulations! You are the <span class="visitor-text" id="visitor-count"></span> visitor! </p>
+    </div>
+    <div class="header">
+      <img class="self" src="@/assets/celebrate.png" />
     </div>
   </div>
 </template>
@@ -25,7 +28,7 @@
 }
 
 .self {
-  width: 100%;
+  width: 70%;
   height: auto;
   /* border-radius: 5px; */
 }
