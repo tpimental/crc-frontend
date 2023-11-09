@@ -202,32 +202,6 @@ export default {
       window.innerHeight - navbarHeight - topNavbarHeight + "px"
     );
 
-    const newPhotoWindowPayload = {
-      windowId: "PhotosWindow",
-      windowState: "close",
-      displayName: "Photos",
-      windowComponent: "FilesWindow",
-      windowContent: "",
-      windowContentPadding: {
-        top: "0px",
-        right: "0px",
-        bottom: "0px",
-        left: "0px",
-      },
-      position: "absolute",
-      positionX: "6vw",
-      positionY: "12vh",
-      iconImage: "photos.png",
-      altText: "Photos",
-      fullscreen: false,
-      showInAppGrid: true,
-      showInNavbar: true,
-      // imagePreview: '',
-      folderContent: this.$store.getters.getPhotoFiles,
-      folderSize: 239217323,
-    };
-    this.$store.commit("pushNewWindow", newPhotoWindowPayload);
-
     this.openWindow("CounterWindow");
   },
   methods: {

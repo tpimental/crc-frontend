@@ -1115,7 +1115,7 @@ export default new Vuex.Store({
       {
         windowId: "BiographyWindow", // Unique ID
         windowState: "close", // Window State [open, close, minimize]
-        displayName: "Biography", // Display Name (title under icon)
+        displayName: "About Me", // Display Name (title under icon)
         windowComponent: "window", // Window Component (can be changed to use modified windows)
         windowContent: "bio", // Window Content (used under slots)
         windowContentPadding: {
@@ -1136,7 +1136,7 @@ export default new Vuex.Store({
       {
         windowId: "ProjectsWindow", // Unique ID
         windowState: "close", // Window State [open, close, minimize]
-        displayName: "Projects", // Display Name (title under icon)
+        displayName: "Site Diagram", // Display Name (title under icon)
         windowComponent: "window", // Window Component (can be changed to use modified windows)
         windowContent: "projects", // Window Content (used under slots)
         windowContentPadding: {
@@ -1170,7 +1170,7 @@ export default new Vuex.Store({
         positionX: "10vw", // Window Position X (when first opened)
         positionY: "15vh", // Window Position Y (when first opened)
         iconImage: "resume.png", // Window Icon Image
-        altText: "Résumé", // Window Icon Alt Text
+        altText: "Resume", // Window Icon Alt Text
         fullscreen: false, // Window Fullscreen State [true, false]
         showInAppGrid: true,
         showInNavbar: true,
@@ -1199,7 +1199,7 @@ export default new Vuex.Store({
       {
         windowId: "CounterWindow", // Unique ID
         windowState: "close", // Window State [open, close, minimize]
-        displayName: "Counter", // Display Name (title under icon)
+        displayName: "Visitor Count", // Display Name (title under icon)
         windowComponent: "AlertWindow", // Window Component (can be changed to use modified windows)
         windowContent: "Counter", // Window Content (used under slots)
         windowContentPadding: {
