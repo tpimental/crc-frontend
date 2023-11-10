@@ -1197,6 +1197,27 @@ export default new Vuex.Store({
         showInNavbar: true,
       },
       {
+        windowId: "UsmcWindow", // Unique ID
+        windowState: "close", // Window State [open, close, minimize]
+        displayName: "USMC", // Display Name (title under icon)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
+        windowContent: "Usmc", // Window Content (used under slots)
+        windowContentPadding: {
+          top: null,
+          right: null,
+          bottom: null,
+          left: null,
+        }, // Window Content Padding
+        position: "absolute", // Window Position
+        positionX: "5vw", // Window Position X (when first opened)
+        positionY: "5%", // Window Position Y (when first opened)
+        iconImage: "usmc.png", // Window Icon Image
+        altText: "USMC Experience", // Window Icon Alt Text
+        fullscreen: false, // Window Fullscreen State [true, false]
+        showInAppGrid: true,
+        showInNavbar: true,
+      },
+      {
         windowId: "CounterWindow", // Unique ID
         windowState: "close", // Window State [open, close, minimize]
         displayName: "Visitor Count", // Display Name (title under icon)

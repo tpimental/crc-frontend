@@ -121,6 +121,7 @@ import AlertWindow from "./components/template/AlertWindow.vue"
 import AppGrid from "./components/AppGrid";
 import FilesWindow from "./components/template/FilesWindow.vue";
 import ImagePreviewWindow from "./components/template/ImagePreviewWindow.vue";
+import Usmc from "./components/views/Usmc.vue"
 import Placeholder from "./components/views/Placeholder";
 import Photos from "./components/views/Photos";
 import Certs from "./components/views/Certs";
@@ -149,6 +150,7 @@ export default {
     Navbar,
     AppGrid,
     Placeholder,
+    Usmc,
     FilesWindow,
     Photos,
     Bio,
