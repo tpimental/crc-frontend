@@ -20,7 +20,7 @@
         Shortly after graduating from highschool, I realized attending community college was not
         challenging enough. I wanted to take on a challenge that would push me to my limits. That
         is when I walked into a recruiting office, expecting to speak to someone about the Air Force.
-        Somehow I landed in front of USMC recruiter and was sold almost instantly. 
+        Somehow I landed in front of a USMC recruiter and was sold almost instantly. 
       </p>
     </div>
     <div class="inner-content">
