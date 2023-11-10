@@ -1179,7 +1179,7 @@ export default new Vuex.Store({
         windowId: "CertsWindow", // Unique ID
         windowState: "close", // Window State [open, close, minimize]
         displayName: "Certs", // Display Name (title under icon)
-        windowComponent: "CertsWindow", // Window Component (can be changed to use modified windows)
+        windowComponent: "window", // Window Component (can be changed to use modified windows)
         windowContent: "Certs", // Window Content (used under slots)
         windowContentPadding: {
           top: null,
