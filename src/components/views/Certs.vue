@@ -2,7 +2,26 @@
   <div>
     <div class="inner-content">
       <h3 class="heading"><b>Microsoft Certified: Azure Administrator Associate</b></h3>
-      <iframe name="acclaim-badge" allowtransparency="true" frameborder="0" id="embedded-badge-1e767239-4977-4323-afbb-db976f5ddd0c" scrolling="no" src="//www.credly.com/embedded_badge/1e767239-4977-4323-afbb-db976f5ddd0c" style="width: 150px; height: 270px;" title="View my verified achievement on Credly."></iframe><script type="text/javascript" async="" src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      <div class="img-container">
+        <iframe name="acclaim-badge" allowtransparency="true" frameborder="0" id="embedded-badge-1e767239-4977-4323-afbb-db976f5ddd0c" scrolling="no" src="//www.credly.com/embedded_badge/1e767239-4977-4323-afbb-db976f5ddd0c" style="width: 150px; height: 270px;" title="View my verified achievement on Credly."></iframe><script type="text/javascript" async="" src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        <div class="badge-grid">
+          <img
+            class="badge"
+            alt="Swift"
+            src="https://img.shields.io/badge/-Azure-Green"
+          />
+          <img
+            class="badge"
+            alt="Python"
+            src="https://img.shields.io/badge/-Administration-blue"
+          />
+          <img
+            class="badge"
+            alt="JavaScript"
+            src="https://img.shields.io/badge/-CLI-yellow"
+          />
+        </div>
+      </div>
       <p class="paragraph">
         I am currently a Cloud Specialist dedicated to optimizing 
         system performance and driving innovation. Passionate about 
@@ -25,6 +44,24 @@
 </template>
 
 <style scoped>
+.badge-grid {
+  display: table;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.badge {
+  width: auto;
+  height: 20px;
+  border-radius: 0px;
+  font-size: 12px;
+  padding-right: 10px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0.1); */
+}
+.img-container{
+  text-align: center;
+}
+
 .badge-grid {
   display: table;
   align-items: center;
