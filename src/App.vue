@@ -7,6 +7,7 @@
         :key="window.key"
         :aria-label="window.displayName"
       >
+
         <component
           :is="window.windowComponent"
           :nameOfWindow="window.windowId"
@@ -28,6 +29,7 @@
         </component>
       </div>
       <app-grid></app-grid>
+
     </div>
     <StartMenu
       v-if="$store.getters.getActiveWindow == 'Menu'"
@@ -58,6 +60,17 @@
 
 html {
   overflow: hidden;
+}
+
+.cont{
+  display: flex;
+  justify-content: space-between;
+  padding:20px;
+}
+
+.left-div, .right--div{
+  width: 48%;
+  padding: 10px;
 }
 
 #app {
@@ -122,8 +135,8 @@ import AppGrid from "./components/AppGrid";
 import FilesWindow from "./components/template/FilesWindow.vue";
 import ImagePreviewWindow from "./components/template/ImagePreviewWindow.vue";
 import Usmc from "./components/views/Usmc.vue"
+import Dod from "./components/views/Dod.vue"
 import Placeholder from "./components/views/Placeholder";
-import Photos from "./components/views/Photos";
 import Certs from "./components/views/Certs";
 import Counter from "./components/views/Counter";
 import Bio from "./components/views/Bio";
@@ -132,9 +145,6 @@ import Resume from "./components/views/Resume";
 import Mail from "./components/template/Mail";
 import StartMenu from "./components/StartMenu.vue";
 import Webos from "./components/template/WebOS";
-import Opensource from "./components/views/Opensource";
-import Wwdc2021 from "./components/views/Wwdc2021";
-import Wwdc2022 from "./components/views/Wwdc2022";
 export default {
   name: "App",
   data: function () {
@@ -150,9 +160,9 @@ export default {
     Navbar,
     AppGrid,
     Placeholder,
+    Dod,
     Usmc,
     FilesWindow,
-    Photos,
     Bio,
     Certs,
     Counter,
@@ -161,9 +171,6 @@ export default {
     Mail,
     StartMenu,
     Webos,
-    Opensource,
-    Wwdc2021,
-    Wwdc2022,
     // TopNavbar,
   },
   computed: {
