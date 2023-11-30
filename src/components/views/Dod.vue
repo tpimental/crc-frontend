@@ -18,8 +18,9 @@
       </div>
       <p class="paragraph">
         After ending my active duty contract with the USMC, I took up contracting work with Eliassen Group. 
-        I was put on a small team at Cherry Point, NC. While there I was introuduced into the great world
-        of end user support and hardware repairs. Exciting! 
+        I was put on a small team at Cherry Point, NC. While there I was introduced into the great world of 
+        end user support and hardware repairs. Exciting! We fixed laptops, repaired Outlook 
+        and diagnosed faulty hard drives, which in turn gave me inspiration to explore engineering.
       </p>
     </div>
     <div class="inner-content">
@@ -34,13 +35,16 @@
         <img
           class="badge"
           alt="Python"
-          src="https://img.shields.io/badge/-M365-red"
+          src="https://img.shields.io/badge/-Win 10-red"
         />
       </div>
       <p class="paragraph">
-        I chose to take a position working with the fine folks at a MARSOC headquarters at Stone Bay, NC. While here,
-        I was exposed to great world of systems administraton. I joined the base's CERP team and our whole purpose to was to
-        replace end of life hardware. I personally unpacked, imaged and deployed roughly 500 assets to users over a few month period.
+        I chose to take a position working with the fine folks at a MARSOC headquarters at Stone Bay, NC. 
+        While here, I had the opportunity to work closely with the system administration gurus. I joined
+         the base's Capital Equipment Replacement Program (CERP) team. My whole purpose was to replace 
+         end of life desktops, laptops and docking stations. I personally unpacked, imaged,  and deployed 
+         roughly 500 assets to users over the period of a few months. In doing so I troubleshot countless
+          issues with WSUS and SCCM. 
       </p>
     </div>
     <div class="inner-content">
@@ -58,9 +62,12 @@
         />
       </div>
       <p class="paragraph">
-        After moving to the beautiful Twentynine Palms with my wife and son, I took up contract work for Apex Systems. I started out doing
-        underground cable construction, but soon moved myself over to the Public Works Division utility IT team. While there I was kind of a Jack of all trades.
-        Our budget was very minimal due to use working towards authority to operate (ATO). 
+        After moving to the beautiful Twentynine Palms with my wife and son, I 
+        took up contract work for Apex Systems. I started out doing underground cable 
+        construction, but soon moved myself over to the Public Works Division utility 
+        IT team. While there I was a Jack of all trades. Our budget was very minimal due to
+        use working towards authority to operate (ATO). I brought our Linux and Windows
+        systems up to what the STIGs required.  
       </p>
     </div>
   </div>
@@ -92,8 +99,8 @@
 }
 
 .paragraph{
-  font-size: 20px;
-  font-weight: bold;
+  word-spacing: 2px;
+
 }
 .subtitle {
   font-size: 12px;
@@ -107,8 +114,8 @@
 }
 
 .header {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .inner-content {

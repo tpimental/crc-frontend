@@ -26,15 +26,13 @@
     <div class="inner-content">
       <h3 class="heading"><b>About Me</b></h3>
       <p class="paragraph">
-        I am currently a Cloud Specialist dedicated to optimizing 
-        system performance and driving innovation. Passionate about 
-        leveraging cloud technologies to enhance efficiency and scalability. 
-        Skilled in troubleshooting complex issues and providing expert solutions. 
-        Constantly seeking opportunities to expand knowledge and stay at the forefront 
-        of emerging trends. Adept at collaborating with cross-functional teams, 
-        utilizing effective communication to foster seamless integration and achieve
-        organizational goals. Former United States Marine Corps service has instilled 
-        discipline, adaptability, and a relentless drive for excellence.
+        Hello, I'm Tyler! If you've made it this far, you can probably tell I've got a 
+        passion for technology. Since I developed a consciousness, I've been intrigued by 
+        everything it has to offer. I am a USMC Veteran, having served from 2016 to 2020. 
+        Now, I live with my Wife and 2 kids in southern California. Any free time I may get, 
+        is usually put towards some kind of project. I like to dabble in creating toys for my 
+        little ones made from microcontrollers and LEDS. Or creating a website in the hardest 
+        way possible!  
       </p>
     </div>
     <div class="inner-content">
@@ -87,6 +85,10 @@
 
 .inner-content {
   padding-top: 30px;
+}
+
+.paragraph {
+  word-spacing: 2px;
 }
 
 h2,

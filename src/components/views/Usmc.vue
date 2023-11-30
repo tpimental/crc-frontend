@@ -17,10 +17,10 @@
         />
       </div>
       <p class="paragraph">
-        Shortly after graduating from highschool, I realized attending community college was not
+        Shortly after graduating from high school, I realized attending community college was not
         challenging enough. I wanted to take on a challenge that would push me to my limits. That
         is when I walked into a recruiting office, expecting to speak to someone about the Air Force.
-        Somehow I landed in front of a USMC recruiter and was sold almost instantly. 
+        Somehow, I landed in front of a USMC recruiter and was sold almost instantly. 
       </p>
     </div>
     <div class="inner-content">
@@ -39,8 +39,8 @@
         />
       </div>
       <p class="paragraph">
-        While stationed at Camp Lejeune, NC, I was apart of 2nd Marine Division Communications Company. 
-        I was apart of the MUX Platoon, where I specialized in satellite communications. Here I learned the 
+        While stationed at Camp Lejeune, NC, I was a part of 2nd Marine Division Communications Company. 
+        I was a part of the MUX Platoon, where I specialized in satellite communications. Here I learned the 
         fundamentals of transmissions and the importance on encryption across them.
       </p>
     </div>
@@ -60,11 +60,11 @@
         />
       </div>
       <p class="paragraph">
-        Not long after, I began to expand my curiosity to other disciplines of the communications field.
-        I began working on our Network on The Move (NOTM) team. We encorporated all aspects of the ecosystem,
-        being administrators of networking, transmissions, and end users. We were capable of driving in a convoy
-        while maintaing a satellite connection back to a server hundres of miles away in order to provide internet
-        connectivity to passengers and other vehicles.
+            Not long after, I began to expand my curiosity to other disciplines of the communications field. 
+            I began working on our Network on The Move (NOTM) team. We incorporated all aspects of the
+             ecosystem, being administrators of networking, transmissions, and end users. We were capable 
+             of driving in a convoy while maintaining a satellite connection back to a server hundreds of
+              miles away in order to provide internet connectivity to passengers and other vehicles. 
       </p>
     </div>
     <div class="inner-content">
@@ -83,9 +83,10 @@
         />
       </div>
       <p class="paragraph">
-        I had the amazing oppourtunity to particiapte in the NATO exercise, Trident Juncture 2018. While there
-        my operating skills were put to the test with exteremly limited access to the internet. This is where I became
-        very aquainted with good 'ol fashion technical manuals. 
+        I had the amazing opportunity to participate in the NATO exercise, 
+        Trident Juncture 2018. While there my operating skills were put to the test with extremely 
+        limited access to the internet. This is where I became very acquainted with good 'ol fashion 
+        technical manuals. 
       </p>
     </div>
     <div class="inner-content">
@@ -104,11 +105,11 @@
         />
       </div>
       <p class="paragraph">
-        Wrapping up my enlistment, I participated in the Marine Warfighting Exercise in Twentynine Palms. I was
-        a foward position satellite transmissions supervisor that oversaw all Time Division Muliple Access (TDMA) and 
-        Frequency Division Muliple Access (FDMA) connections for our company. This is also where I expereinced my longest 
-        troubleshooting endevor, lasting only 40 straigh hours. I became very familiar with picking apart the OSI model 
-        to properly isolate and identify problems, rather than taking a 'Shotgun Style' approach.
+        Wrapping up my enlistment, I participated in the Marine Warfighting Exercise in Twentynine Palms. I was 
+        a forward position satellite transmissions supervisor that oversaw all Time Division Multiple Access (TDMA) and  
+        Frequency Division Multiple Access (FDMA) connections for our company. This is also where I experienced my longest  
+        troubleshooting endeavor, lasting only 40 straight hours. I became remarkably familiar with picking apart the OSI model  
+        to properly isolate and identify problems, rather than taking a 'Shotgun Style' approach. 
       </p>
     </div>
   </div>
@@ -157,6 +158,10 @@
 
 .inner-content {
   padding-top: 30px;
+}
+
+.paragraph {
+  word-spacing: 2px;
 }
 
 h2,

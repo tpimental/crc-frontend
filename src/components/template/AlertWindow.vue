@@ -90,10 +90,10 @@
   margin: 0px;
   user-select: none;
   -ms-touch-action: none;
-  min-height: 200px;
-  min-width: 250px;
-  max-width: 250vw !important;
-  max-height: 200vh !important;
+  min-height: 550px;
+  min-width: 450px;
+  max-width: 450vw !important;
+  max-height: 550vh !important;
   touch-action: none;
   flex-flow: column;
   display: flex;

@@ -1,11 +1,17 @@
 <template>
   <div>
     <div class="header">
-      <h2>Congratulations!</h2>
-      <p class="paragraph">Congratulations! You are the <span class="visitor-text" id="visitor-count"></span> visitor! </p>
+      <h2>Hey there!</h2>
+      <p class="paragraph">Thanks for visiting my personal portfolio!<br>
+      You are the <span class="visitor-text" id="visitor-count"></span> visitor! </p>
+      <p class="paragraph">This is my submission for the <a href="https://cloudresumechallenge.dev/docs/the-challenge/azure/">Cloud Resume Challenge</a>. 
+      This site was made entirely with Azure resources and averages to about 1$ a month!
+      </p>
+      <p class="paragraph">Feel free to look around and check out what I've been up to!</p>
+      <p class="paragraph"></p>
     </div>
     <div class="header">
-      <img class="self" src="@/assets/celebrate.png" />
+      <img class="self" src="@/assets/azure.png" />
     </div>
   </div>
 </template>
@@ -43,8 +49,9 @@
 }
 
 .header {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-content: center;
 }
 
 .inner-content {
