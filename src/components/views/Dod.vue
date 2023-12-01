@@ -48,6 +48,7 @@
       </p>
     </div>
     <div class="inner-content">
+      <h2 class="heading"><b>Apex Systems - PWD UTIL IT</b></h2>
       <img class="self" src="@/assets/twentyninepalms.png" />
       <div class="badge-grid">
         <img
@@ -91,7 +92,7 @@
 }
 
 .self {
-  width: 100%;
+  width: 75%;
   height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
