@@ -70,6 +70,7 @@ h3 {
 export default{
   mounted() {
     const outputElement = document.getElementById("visitor-count");
+    outputElement.innerHTML = "[Fetching...]";
 
     //increment the counter
     fetch("https://tpimental-apimgmt.azure-api.net/backend-functionapp-current/increment-count")
