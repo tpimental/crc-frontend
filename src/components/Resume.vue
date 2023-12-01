@@ -110,7 +110,7 @@
           <iframe
             @click.native="focusResume"
             class="frame"
-            src="https://drive.google.com/file/d/1AGBB5Zyi5hLaMaf0JIu3w_FPbSSYJU5c/preview"
+            src="https://drive.google.com/file/d/1nMiYmqGSmO4dWPr9kADm2CtBNNrOz68C/preview"
           ></iframe>
           <div
             v-if="$store.getters.activeWindow != 'Resume'"
