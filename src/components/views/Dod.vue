@@ -71,6 +71,37 @@
         systems up to what the STIGs required.  
       </p>
     </div>
+    <div class="inner-content">
+      <h2 class="heading"><b>EXPANSIA Group</b></h2>
+      <img class="self" src="@/assets/expansia.png" />
+      <div class="badge-grid">
+        <img
+          class="badge"
+          alt="Swift"
+          src="https://img.shields.io/badge/-SRE-gold"
+        />
+        <img
+          class="badge"
+          alt="Python"
+          src="https://img.shields.io/badge/-AWS-red"
+        />
+      </div>
+      <p class="paragraph">
+        It was good to be back working in the cleared space again after a hiatus. I joined the infrastructure team as a junior SRE, which 
+
+        was a large step in my career. I was able to develop Terraform and Ansible infrastructure as code for some pretty stuff. 
+
+        I also focused on engineering secure RHEL and Windows solutions in the AWS IL4 GovCloud. Working alongside a talented team,  
+
+        we successfully navigated the complex compliance process to achieve an Authority to Operate (ATO) (with conditions) for our cloud-based  
+
+        infrastructure. I played a key role in hardening systems to meet strict security standards, ensuring our Linux and  
+
+        Windows environments aligned with DISA STIG requirements. This project not only sharpened my cloud engineering skills  
+
+        but also reinforced my passion for building secure and scalable solutions in regulated environments. 
+      </p>
+    </div>
   </div>
 </template>
 
