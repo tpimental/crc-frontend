@@ -34,7 +34,7 @@
       <iframe
         @click.native="openWindow('ResumeWindow')"
         class="frame"
-        src="https://drive.google.com/file/d/1oPkXW7Q-UnUzwyZjLPGhqkqhp9H8EzJB/preview"
+        src="https://drive.google.com/file/d/1uGd2A2udI7ohtKXE6En7q_ocT7KrGOds/view?usp=sharing"
       ></iframe>
       <span
         v-if="$store.getters.getActiveWindow != 'ResumeWindow'"
