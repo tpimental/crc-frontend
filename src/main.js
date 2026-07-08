@@ -1,19 +1,17 @@
-import Vue from "vue";
+import { createApp } from "vue";
 import App from "./App.vue";
 import store from "./store";
-import moment from "moment";
-import VueInteractJs from "vue-interactjs";
-import Vue2TouchEvents from "vue2-touch-events";
+import Interact from "./components/template/Interact.vue";
+import { icon } from "./utils/icons";
 
-Vue.use(Vue2TouchEvents, {
-  disableClick: true,
-});
+const app = createApp(App);
 
-Vue.use(VueInteractJs);
-Vue.prototype.moment = moment;
-Vue.config.productionTip = false;
+app.use(store);
 
-new Vue({
-  render: (h) => h(App),
-  store,
-}).$mount("#app");
+// Local Vue 3 port of the old vue-interactjs <interact> wrapper
+app.component("interact", Interact);
+
+// Icon URL helper available in all templates (replaces webpack require())
+app.config.globalProperties.$icon = icon;
+
+app.mount("#app");

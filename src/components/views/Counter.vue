@@ -3,7 +3,7 @@
     <div class="header">
       <h2>Hey there!</h2>
       <p class="paragraph">Thanks for visiting my personal portfolio!<br>
-      You are the <span class="visitor-text" id="visitor-count"></span> visitor! </p>
+      You are the <span class="visitor-text">{{ visitorCount }}</span> visitor! </p>
       <p class="paragraph">This is my submission for the <a href="https://cloudresumechallenge.dev/docs/the-challenge/azure/">Cloud Resume Challenge</a>. 
       This site was made entirely with Azure resources and averages to about 1$ a month!
       </p>
@@ -67,67 +67,58 @@ h3 {
 </style>
 
 <script>
-export default{
-  mounted() {
-    const outputElement = document.getElementById("visitor-count");
-    outputElement.innerHTML = "[Fetching...]";
+const API_BASE = "https://tpimental-apimgmt.azure-api.net/backend-functionapp-current";
 
-    //increment the counter
-    fetch("https://tpimental-apimgmt.azure-api.net/backend-functionapp-current/increment-count")
-        .then(response => {
+export default {
+  name: "CounterView",
+  data() {
+    return {
+      visitorCount: "[Fetching...]",
+    };
+  },
+  async mounted() {
+    try {
+      // increment the counter
+      await fetch(`${API_BASE}/increment-count`).catch((error) =>
+        console.log("Increment count error:", error)
+      );
 
-        })
-        .catch(error => {
-            console.log("Increment count error:", error);
-
-        })
-    //get the new count
-    fetch("https://tpimental-apimgmt.azure-api.net/backend-functionapp-current/get-count")
-        .then(response => {
-            if(response.ok){
-                return response.json();
-            }else {
-                return response.json().then(data => {
-                    throw new Error(data.message); // If not successful, throw an error with the message
-                });
-            }
-        })
-        .then(data => {
-            //Process the data from the API response
-            const responseData = data;
-
-            outputElement.innerHTML = addNumberSuffix(data);
-            console.log(responseData);
-        })
-        .catch(error => {
-            // Error handling
-            console.error("Get Count Error: ", error);
-        });
-
-    function addNumberSuffix(number) {
-        if (typeof number !== 'number' || isNaN(number)) {
-            return 'Invalid input';
-        }
-
-        const lastDigit = number % 10;
-        const secondLastDigit = Math.floor((number % 100) / 10);
-
-        if (secondLastDigit === 1) {
-            return number + 'th';
-        } else {
-            switch (lastDigit) {
-                case 1:
-                    return number + 'st';
-                case 2:
-                    return number + 'nd';
-                case 3:
-                    return number + 'rd';
-                default:
-                    return number + 'th';
-            }
-        }
+      // get the new count
+      const response = await fetch(`${API_BASE}/get-count`);
+      if (!response.ok) {
+        const data = await response.json();
+        throw new Error(data.message);
+      }
+      const count = await response.json();
+      this.visitorCount = this.addNumberSuffix(count);
+    } catch (error) {
+      console.error("Get Count Error: ", error);
+      this.visitorCount = "?";
     }
-  }
-}
+  },
+  methods: {
+    addNumberSuffix(number) {
+      if (typeof number !== "number" || isNaN(number)) {
+        return "Invalid input";
+      }
 
+      const lastDigit = number % 10;
+      const secondLastDigit = Math.floor((number % 100) / 10);
+
+      if (secondLastDigit === 1) {
+        return number + "th";
+      }
+      switch (lastDigit) {
+        case 1:
+          return number + "st";
+        case 2:
+          return number + "nd";
+        case 3:
+          return number + "rd";
+        default:
+          return number + "th";
+      }
+    },
+  },
+};
 </script>

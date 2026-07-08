@@ -25,7 +25,9 @@
           :folderSize="window.folderSize"
           v-if="windowCheck(window.windowId)"
         >
-          <component :is="window.windowContent" slot="content"> </component>
+          <template #content>
+            <component :is="window.windowContent"> </component>
+          </template>
         </component>
       </div>
       <app-grid></app-grid>
@@ -51,7 +53,7 @@
 
 @font-face {
   font-family: "MS Sans Serif";
-  src: url("~@/assets/fonts/MS-Sans-Serif.ttf");
+  src: url("@/assets/fonts/MS-Sans-Serif.ttf");
 }
 
 /*-------------------------------------------*\
@@ -126,25 +128,25 @@ html {
     Import Components, you can change the path for different
     component themes (blueprint, windows, macos)
 \*------------------------------------------------------------*/
-import Navbar from "./components/windows/Navbar";
+import Navbar from "./components/windows/Navbar.vue";
 // import TopNavbar from './components/macos/TopNavbar.vue'
-import Window from "./components/template/Window";
+import Window from "./components/template/Window.vue";
 import CertsWindow from "./components/template/CertsWindow.vue";
 import AlertWindow from "./components/template/AlertWindow.vue"
-import AppGrid from "./components/AppGrid";
+import AppGrid from "./components/AppGrid.vue";
 import FilesWindow from "./components/template/FilesWindow.vue";
 import ImagePreviewWindow from "./components/template/ImagePreviewWindow.vue";
 import Usmc from "./components/views/Usmc.vue"
 import Dod from "./components/views/Dod.vue"
-import Placeholder from "./components/views/Placeholder";
-import Certs from "./components/views/Certs";
-import Counter from "./components/views/Counter";
-import Bio from "./components/views/Bio";
-import Projects from "./components/views/Projects";
-import Resume from "./components/views/Resume";
-import Mail from "./components/template/Mail";
+import Placeholder from "./components/views/Placeholder.vue";
+import Certs from "./components/views/Certs.vue";
+import Counter from "./components/views/Counter.vue";
+import Bio from "./components/views/Bio.vue";
+import Projects from "./components/views/Projects.vue";
+import Resume from "./components/views/Resume.vue";
+import Mail from "./components/template/Mail.vue";
 import StartMenu from "./components/StartMenu.vue";
-import Webos from "./components/template/WebOS";
+import Webos from "./components/template/WebOS.vue";
 export default {
   name: "App",
   data: function () {

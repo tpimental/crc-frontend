@@ -1,44 +1,29 @@
 <template>
   <div style="display: flex; height: 100%; flex-direction: column">
     <nav class="download-bar">
-      <a
-        href="/files/tyler_pimental_resume.pdf"
-        class="download"
-        style="z-index: 10"
-        download
-        target="_blank"
-      >
+      <a :href="resume.pdf" class="download" style="z-index: 10" download target="_blank">
         <span style="display: flex" class="border">
           <img src="@/assets/download.png" class="icon-image" />
           <p style="margin-top: 2px">Download</p>
         </span>
       </a>
 
-      <a
-        href="/files/tyler_pimental_resume.pdf"
-        class="download"
-        style="z-index: 10"
-        target="_blank"
-      >
+      <a :href="resume.pdf" class="download" style="z-index: 10" target="_blank">
         <span style="display: flex" class="border">
           <img src="@/assets/open.png" class="icon-image" />
           <p style="margin-top: 2px">Open In New Tab</p>
         </span>
       </a>
     </nav>
-    <div
-      class="frame"
-      @click.native="openWindow('ResumeWindow')"
-      style="z-index: 99"
-    >
+    <div class="frame" @click="openWindow('ResumeWindow')" style="z-index: 99">
       <iframe
-        @click.native="openWindow('ResumeWindow')"
+        @click="openWindow('ResumeWindow')"
         class="frame"
-        src="https://drive.google.com/file/d/1uGd2A2udI7ohtKXE6En7q_ocT7KrGOds/view?usp=sharing"
+        :src="resume.embedUrl"
       ></iframe>
       <span
         v-if="$store.getters.getActiveWindow != 'ResumeWindow'"
-        @click.native="openWindow('ResumeWindow')"
+        @click="openWindow('ResumeWindow')"
         style="bottom: 0; left: 0; width: 100%; height: 95%; position: absolute"
         class="overlay"
       ></span>
@@ -95,7 +80,7 @@
   align-items: center;
   border: 1px solid transparent;
   font-family: "MS Sans Serif";
-  src: url("~@/assets/fonts/MS-Sans-Serif.ttf");
+  src: url("@/assets/fonts/MS-Sans-Serif.ttf");
 }
 
 .border:active {
@@ -111,3 +96,23 @@
   height: 97.5%;
 }
 </style>
+
+<script>
+// Resume file + embed URL live in src/content/resume.js — edit that file.
+import resume from "@/content/resume.js";
+
+export default {
+  name: "ResumeView",
+  data() {
+    return { resume };
+  },
+  methods: {
+    openWindow(windowId) {
+      this.$store.commit("setWindowState", {
+        windowState: "open",
+        windowID: windowId,
+      });
+    },
+  },
+};
+</script>

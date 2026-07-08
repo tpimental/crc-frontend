@@ -8,7 +8,7 @@
     :style="style"
     @dragmove="dragmove"
     @resizemove="resizemove"
-    @click.native="setActiveWindow"
+    @click="setActiveWindow"
     :class="{
       fullscreen: $store.getters.getWindowFullscreen(this.ComponentName),
       minimize:
@@ -28,7 +28,7 @@
       <div class="window-name">
         <img
           class="icon-image"
-          :src="require('@/assets/win95Icons/' + this.window.iconImage)"
+          :src="$icon(this.window.iconImage)"
           :alt="window.altText"
         />{{ this.window.displayName }}
       </div>

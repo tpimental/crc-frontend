@@ -213,7 +213,7 @@ a {
   align-items: center;
   border: 1px solid transparent;
   font-family: "MS Sans Serif";
-  src: url("~@/assets/fonts/MS-Sans-Serif.ttf");
+  src: url("@/assets/fonts/MS-Sans-Serif.ttf");
 }
 
 .border:active {

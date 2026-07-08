@@ -105,16 +105,16 @@
             </span>
           </a>
         </div>
-        <div class="frame" @click.native="focusResume" style="z-index: 99">
+        <div class="frame" @click="focusResume" style="z-index: 99">
 
           <iframe
-            @click.native="focusResume"
+            @click="focusResume"
             class="frame"
             src="https://drive.google.com/file/d/1uGd2A2udI7ohtKXE6En7q_ocT7KrGOds/view?usp=sharing"
           ></iframe>
           <div
             v-if="$store.getters.activeWindow != 'Resume'"
-            @click.native="focusResume"
+            @click="focusResume"
             style="
               bottom: 0;
               left: 0;
@@ -207,7 +207,7 @@ a {
   align-items: center;
   border: 1px solid transparent;
   font-family: "MS Sans Serif";
-  src: url("~@/assets/fonts/MS-Sans-Serif.ttf");
+  src: url("@/assets/fonts/MS-Sans-Serif.ttf");
 }
 
 .border:active {
